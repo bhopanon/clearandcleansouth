@@ -166,59 +166,23 @@
             </p>
           </div>
 
-          <form
-            class="contact-form"
-            action="mailto:bhopp985@gmail.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <div class="form-row">
-              <label>
-                Name
-                <input type="text" name="name" autocomplete="name" required />
-              </label>
-              <label>
-                Phone
-                <input type="tel" name="phone" autocomplete="tel" required />
-              </label>
-            </div>
-
-            <div class="form-row">
-              <label>
-                Email
-                <input type="email" name="email" autocomplete="email" />
-              </label>
-              <label>
-                Service needed
-                <select name="service" required>
-                  <option value="">Choose one</option>
-                  <option>Garage cleanout</option>
-                  <option>Home junk removal</option>
-                  <option>Move-out cleanout</option>
-                  <option>Shed or yard debris</option>
-                  <option>Other</option>
-                </select>
-              </label>
-            </div>
-
-            <label>
-              Service address or area
-              <input type="text" name="location" autocomplete="street-address" />
-            </label>
-
-            <label>
-              What needs to be removed?
-              <textarea name="details" rows="5" required></textarea>
-            </label>
-
-            <label class="upload-field">
-              Photos of the job
-              <input type="file" name="photos" accept="image/*" multiple />
-              <span>Attach photos in the email window after submitting.</span>
-            </label>
-
-            <button class="button primary light" type="submit">Send Estimate Request</button>
-          </form>
+          <div class="google-form-card">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSc4UyoxlTFYf3qajTvgX4ly6iQOE1iDUAJhSbx7KQi8DWgTFQ/viewform?embedded=true"
+              title="Clear & Clean Co. estimate request form"
+              loading="lazy"
+            >
+              Loading...
+            </iframe>
+            <a
+              class="button primary light"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc4UyoxlTFYf3qajTvgX4ly6iQOE1iDUAJhSbx7KQi8DWgTFQ/viewform"
+              target="_blank"
+              rel="noopener"
+            >
+              Open Form in New Tab
+            </a>
+          </div>
         </div>
       </section>
     </main>
