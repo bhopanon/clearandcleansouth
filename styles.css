@@ -491,84 +491,26 @@ p {
   color: rgba(255, 255, 255, 0.82);
 }
 
-.contact-form {
+.google-form-card {
   display: grid;
   gap: 16px;
-  padding: clamp(20px, 3vw, 30px);
-  color: var(--ink);
+  padding: clamp(14px, 2vw, 20px);
   background: rgba(255, 255, 255, 0.98);
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 18px;
   box-shadow: 0 24px 60px rgba(7, 24, 39, 0.22);
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-}
-
-.contact-form label {
-  display: grid;
-  gap: 8px;
-  color: var(--navy);
-  font-size: 0.83rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+.google-form-card iframe {
   width: 100%;
-  min-height: 48px;
-  padding: 12px 14px;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  font: inherit;
-  font-size: 1rem;
-  letter-spacing: 0;
-  outline: none;
-}
-
-.contact-form textarea {
-  min-height: 130px;
-  resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  border-color: var(--green);
-  box-shadow: 0 0 0 4px rgba(92, 143, 63, 0.18);
-}
-
-.upload-field {
-  padding: 16px;
-  background: #eef3ea;
-  border: 1px dashed rgba(49, 95, 37, 0.5);
-  border-radius: 14px;
-}
-
-.upload-field input {
+  min-height: 720px;
   background: var(--white);
-}
-
-.upload-field span {
-  color: var(--muted);
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.contact-form button {
-  width: fit-content;
   border: 0;
-  cursor: pointer;
+  border-radius: 12px;
+}
+
+.google-form-card .button {
+  justify-self: start;
 }
 
 .site-footer {
@@ -708,12 +650,12 @@ p {
     transform: translateY(-2px);
   }
 
-  .form-row {
-    grid-template-columns: 1fr;
+  .google-form-card .button {
+    width: 100%;
   }
 
-  .contact-form button {
-    width: 100%;
+  .google-form-card iframe {
+    min-height: 780px;
   }
 
   .service-grid,
